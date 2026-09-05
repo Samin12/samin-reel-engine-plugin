@@ -17,6 +17,14 @@ Samin Reel Engine turns a promising story into a complete creator workflow: rese
 
 It combines **ten focused skills** with a **local HyperFrames editing runtime**, practical source-finding recipes, reusable JSON contracts and explicit creative checks. Skills load by stage, so an agent can repair one weak visual or work through the complete pipeline.
 
+## Explore the interactive website
+
+[**Visit the Reel Engine 3D experience →**](https://open-yoga-hpnv.here.now/)
+
+![The Reel Engine website: your next reel needs a system](docs/assets/website-desktop.png)
+
+Explore the pipeline, watch the actual reel, choose your starting point and sign up for product updates. Built with [Astra Designer](https://github.com/Samin12/astra-designer). [Website source and buyer-journey walkthrough](https://github.com/Samin12/astra-designer/tree/main/examples/reel-engine).
+
 ## See it in motion
 
 <table>

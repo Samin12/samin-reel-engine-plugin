@@ -19,11 +19,11 @@ It combines **ten focused skills** with a **local HyperFrames editing runtime**,
 
 ## Explore the interactive website
 
-[**Visit the Reel Engine 3D experience →**](https://open-yoga-hpnv.here.now/)
+[**Visit the Reel Engine 3D experience →**](https://open-yoga-hpnv.here.now/?v=2)
 
 ![The Reel Engine website: your next reel needs a system](docs/assets/website-desktop.png)
 
-Explore the pipeline, watch the actual reel, choose your starting point and sign up for product updates. Built with [Astra Designer](https://github.com/Samin12/astra-designer). [Website source and buyer-journey walkthrough](https://github.com/Samin12/astra-designer/tree/main/examples/reel-engine).
+Explore the pipeline, watch the actual reel, choose your starting point and sign up for product updates. Built with [Astra Designer](https://github.com/Samin12/astra-designer). [Website source and buyer-journey walkthrough](https://github.com/Samin12/astra-designer/tree/main/examples/reel-engine-v2).
 
 ## See it in motion
 

@@ -1,0 +1,27 @@
+{
+  "repository": "https://github.com/Samin12/samin-reel-engine-plugin",
+  "is_private": false,
+  "release_url": "https://github.com/Samin12/samin-reel-engine-plugin/releases/tag/v0.3.0",
+  "assets": [
+    {
+      "name": "mobbin-pilot-v4.mp4",
+      "bytes": 52428817,
+      "sha256": "e295f88369a38aca9e02aef8400259b6e0ee656a78161d57510419798e08fb5a",
+      "github_digest_matches": true
+    },
+    {
+      "name": "mobbin-v4-music-credit.txt",
+      "bytes": 284,
+      "sha256": "64e69cee2a33204b9006ee5f21e438f2c08143471b3bca74d6485d062dfc4325",
+      "github_digest_matches": true
+    },
+    {
+      "name": "samin-reel-engine-public-v0.3.0.zip",
+      "bytes": 264021,
+      "sha256": "fa9dc8c6b5f3631db5544195612f5f0905347d63ea217449a2756672d770d20b",
+      "github_digest_matches": true
+    }
+  ],
+  "readme_visual_check": "Logged-out GitHub page showed Public badge; actual hero, animated showcase and pipeline graphic inspected in browser.",
+  "source_distribution": "Fresh public Git history; no private repository history copied."
+}

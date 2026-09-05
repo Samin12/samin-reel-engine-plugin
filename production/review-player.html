@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>@@TITLE@@</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#141418;color:#f5f4f7;font:16px system-ui,sans-serif}main{max-width:1040px;margin:auto;padding:24px}h1{font-size:28px;letter-spacing:-.8px;margin:0 0 8px}p{color:#bdbac6;line-height:1.5;margin:0 0 20px}.players{display:grid;grid-template-columns:1fr 1fr;gap:20px}.players.single{grid-template-columns:1fr;max-width:440px;margin:auto}.single video{max-height:none}.player{text-align:center}.player h2{font-size:14px;font-weight:600;letter-spacing:.04em}video{object-fit:contain;display:block;background:#000;border-radius:12px;width:100%;max-height:65vh;aspect-ratio:9/16}button,select{font:inherit;color:inherit;background:#27242f;border:1px solid #4a4457;border-radius:8px;padding:10px 14px;cursor:pointer}button:hover{background:#3c334d}button.primary{background:#d4a1f7;color:#20132e;border:0;font-weight:650}.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:22px 0 12px}input{width:100%;accent-color:#d4a1f7}.time{font-variant-numeric:tabular-nums;color:#c8c4d0}.moments{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.moments button{font-size:13px}footer{font-size:13px;color:#a9a5b3;line-height:1.6;margin-top:20px}a{color:#d4a1f7}.error{color:#ffb5a9} @media(max-width:520px){main{padding:16px}.players{gap:8px}video{border-radius:6px}.player h2{font-size:12px}}
+</style>
+<main><h1>@@TITLE@@</h1><p>Compare the same spoken moment. Both videos play together; choose one soundtrack.</p>
+<div class="players"><section class="player"><h2>REFERENCE</h2><video id="reference" src="reference.mp4" preload="metadata" playsinline muted></video></section><section class="player"><h2>CANDIDATE</h2><video id="candidate" src="candidate.mp4" preload="metadata" playsinline></video></section></div>
+<div class="controls"><button class="primary" id="play">Play both</button><button id="restart">Restart</button><label>Sound <select id="sound"><option value="candidate">New cut</option><option value="reference">Reference</option></select></label><label>View <select id="view"><option value="both">Both</option><option value="candidate">Candidate only</option><option value="reference">Reference only</option></select></label><span class="time" id="clock">0:00 / @@CLOCK@@</span></div>
+<label aria-label="Playback position"><input id="seek" type="range" min="0" max="@@DURATION@@" step="0.033333" value="0"></label>
+<div class="moments">@@MOMENTS@@</div><p id="error" class="error" role="status"></p>
+<footer>For aligned versions of the same script. Compare source relevance, reading time, captions, lip sync and sound. A successful playback test does not record an editorial approval.</footer></main>
+<script>
+const candidate=document.getElementById('candidate'),reference=document.getElementById('reference'),play=document.getElementById('play'),seek=document.getElementById('seek'),clock=document.getElementById('clock');
+const fmt=t=>Math.floor(t/60)+':'+String(Math.floor(t%60)).padStart(2,'0');
+function pause(){candidate.pause();reference.pause();play.textContent='Play both'}
+async function start(){reference.currentTime=candidate.currentTime;try{await Promise.all([candidate.play(),reference.play()]);play.textContent='Pause both'}catch(e){pause();document.getElementById('error').textContent='Playback could not start. Open this folder in a browser or use Open new cut below.'}}
+function jump(t){candidate.currentTime=t;reference.currentTime=t;seek.value=t;clock.textContent=fmt(t)+' / @@CLOCK@@'}
+play.onclick=()=>candidate.paused?start():pause();
+document.getElementById('restart').onclick=()=>{pause();jump(0)};
+document.getElementById('sound').onchange=e=>{candidate.muted=e.target.value!=='candidate';reference.muted=e.target.value!=='reference'};
+seek.oninput=e=>jump(Number(e.target.value));
+document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{pause();jump(Number(b.dataset.time))});
+candidate.ontimeupdate=()=>{seek.value=candidate.currentTime;clock.textContent=fmt(candidate.currentTime)+' / @@CLOCK@@';if(!candidate.paused&&Math.abs(reference.currentTime-candidate.currentTime)>.2)reference.currentTime=candidate.currentTime};
+document.getElementById('view').onchange=e=>{const value=e.target.value;document.querySelector('.players').classList.toggle('single',value!=='both');candidate.parentElement.hidden=value==='reference';reference.parentElement.hidden=value==='candidate';if(value!=='both'){const sound=document.getElementById('sound');sound.value=value;sound.dispatchEvent(new Event('change'))}};
+candidate.onended=pause;
+</script></html>

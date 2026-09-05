@@ -1,0 +1,27 @@
+{
+  "name": "samin-reel-engine",
+  "version": "0.3.0",
+  "description": "Samin\u2019s reel production pipeline: sourced research, voice, real B-roll, editing, review and resource delivery.",
+  "author": {
+    "name": "Samin Yasar"
+  },
+  "repository": "https://github.com/Samin12/samin-reel-engine-plugin",
+  "license": "UNLICENSED",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Samin Reel Engine",
+    "shortDescription": "Research, source, edit and review reels in Samin\u2019s style.",
+    "longDescription": "Ten stage skills and a local rendering runtime for source-backed creator reels. Bring your own scripts, footage, voice samples and provider accounts. Includes editing rules, schemas, review gates and giveaway handoffs.",
+    "developerName": "Samin Yasar",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Turn my filming batch into a sourced reel.",
+      "Find proof visuals for this reel script.",
+      "Review this edit against my reference."
+    ],
+    "brandColor": "#D4A1F7"
+  }
+}

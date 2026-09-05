@@ -1,0 +1,109 @@
+{
+  "title": "Timeline field example \u2014 supply actual media and review the edit",
+  "source": {
+    "path": "source.mp4",
+    "segments": [
+      {
+        "start": 0,
+        "end": 12
+      }
+    ],
+    "object_position": "50% 40%"
+  },
+  "words_path": "words.json",
+  "output": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30
+  },
+  "captions": {
+    "max_words": 4,
+    "max_chars": 27,
+    "accent": "#D4A1F7",
+    "emphasis": [
+      "perspectives"
+    ],
+    "font_family": "Arial Black"
+  },
+  "shots": [
+    {
+      "start": 0,
+      "end": 3,
+      "layout": "split",
+      "caption_y": 44,
+      "graphic": {
+        "eyebrow": "CONCEPTUAL ILLUSTRATION",
+        "title": "Different perspectives",
+        "cards": [
+          {
+            "label": "QUESTION",
+            "text": "What assumption needs testing?"
+          },
+          {
+            "label": "EVIDENCE",
+            "text": "What supports the answer?"
+          }
+        ]
+      }
+    },
+    {
+      "start": 3,
+      "end": 7,
+      "layout": "presenter",
+      "caption_y": 60,
+      "zoom": 1.08
+    },
+    {
+      "start": 7,
+      "end": 10,
+      "layout": "full_broll",
+      "caption_y": 70,
+      "graphic": {
+        "eyebrow": "CONCEPTUAL ILLUSTRATION",
+        "title": "Compare the reasoning",
+        "cards": [
+          {
+            "label": "INPUT",
+            "text": "Your actual question goes here"
+          },
+          {
+            "label": "REVIEW",
+            "text": "Inspect assumptions and disagreement"
+          }
+        ]
+      }
+    },
+    {
+      "start": 10,
+      "end": 12,
+      "layout": "presenter",
+      "caption_y": 60
+    }
+  ],
+  "zooms": [
+    {
+      "at": 11,
+      "scale": 1.1,
+      "duration": 0.16
+    }
+  ],
+  "sfx": [
+    {
+      "kind": "soft_pop",
+      "at": 3,
+      "gain": 0.06
+    }
+  ],
+  "audio_policy": {
+    "music_required": true
+  },
+  "music": [
+    {
+      "path": "music.wav",
+      "start": 0,
+      "end": 12,
+      "source_start": 0,
+      "gain": 0.26
+    }
+  ]
+}

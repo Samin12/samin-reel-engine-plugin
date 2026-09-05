@@ -1,0 +1,10 @@
+{
+  "reel_id": null,
+  "stage": "intake_pending",
+  "input_paths": {},
+  "completed_artifacts": [],
+  "current_issue": null,
+  "next_action": "Resolve the supplied recording, script/reference and intended current stage.",
+  "render_sha256": null,
+  "review_status": "not_reviewed"
+}

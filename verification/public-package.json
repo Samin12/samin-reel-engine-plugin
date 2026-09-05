@@ -1,0 +1,20 @@
+{
+  "package": "Public distribution without private Git history",
+  "local_markdown_links": "passed",
+  "credential_and_private_path_pattern_scan": "passed; patterned scan plus explicit file allowlist, not a guarantee about arbitrary secrets",
+  "private_voice_corpus_included": false,
+  "raw_filming_batches_included": false,
+  "private_research_or_account_records_included": false,
+  "skills_validated": 10,
+  "tests": {
+    "production": 15,
+    "editor": {
+      "passed": 6,
+      "skipped_render_dependent": 2
+    },
+    "intake": 8
+  },
+  "local_runtime_doctor": "all dispatched helpers present; core edit dependencies present on the checked Python3.11 machine",
+  "fresh_machine_install": "not claimed",
+  "showcase": "Existing final Mobbin v4 render; no fresh video render performed for public packaging"
+}

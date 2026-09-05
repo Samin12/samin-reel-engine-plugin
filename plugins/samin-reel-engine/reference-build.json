@@ -1,0 +1,77 @@
+{
+  "source": "skill/references",
+  "target": "plugins/samin-reel-engine/references",
+  "runtime": "Configured local project; resolve with plugin scripts/reel.py context",
+  "files": [
+    {
+      "path": "plugins/samin-reel-engine/references/asset-playbook.md",
+      "source_sha256": "5dda61f809896977d0dec5cf99ba9b76a360050a0e4ecac45751f7b9e83f107d",
+      "packaged_sha256": "5dda61f809896977d0dec5cf99ba9b76a360050a0e4ecac45751f7b9e83f107d"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/generation-recipes.md",
+      "source_sha256": "106c67346c6c17f175105091d8bc57d5dd05e68b7b757d6d910349f91f0d3ca4",
+      "packaged_sha256": "106c67346c6c17f175105091d8bc57d5dd05e68b7b757d6d910349f91f0d3ca4"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/manychat.md",
+      "source_sha256": "706707ed07a654b969ca7337f0aa8f051bbaa203c15ac1b389d1ebb1d77227a3",
+      "packaged_sha256": "706707ed07a654b969ca7337f0aa8f051bbaa203c15ac1b389d1ebb1d77227a3"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/operator-runbook.md",
+      "source_sha256": "b5f799260eeb3fce44c9ec0b4a385c370f225df8f0137333b82bdb152d85c3d6",
+      "packaged_sha256": "b5f799260eeb3fce44c9ec0b4a385c370f225df8f0137333b82bdb152d85c3d6"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/pipeline-contract.md",
+      "source_sha256": "9adaa4bb70ee0e3d0207f722119763a783473c0ebdb9ab4cf3c6fbfd778ab26d",
+      "packaged_sha256": "9adaa4bb70ee0e3d0207f722119763a783473c0ebdb9ab4cf3c6fbfd778ab26d"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/pipeline-operations.md",
+      "source_sha256": "722d4023b7285004a2febfc6bfd992cf8bf7e92bcf7dd8b218926e818aaa2ad5",
+      "packaged_sha256": "722d4023b7285004a2febfc6bfd992cf8bf7e92bcf7dd8b218926e818aaa2ad5"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/quality-procedure.md",
+      "source_sha256": "9f6b2c44b275883482074902fe4b0bf7ff447fecaf15b91797a172d0bed28ecd",
+      "packaged_sha256": "9f6b2c44b275883482074902fe4b0bf7ff447fecaf15b91797a172d0bed28ecd"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/research-contract.md",
+      "source_sha256": "58034b831634aec36e474185ca36861d9f5183f8d02bcdf7ec209afbf7b95736",
+      "packaged_sha256": "58034b831634aec36e474185ca36861d9f5183f8d02bcdf7ec209afbf7b95736"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/saved-resources.md",
+      "source_sha256": "af83562c2f620cb3ab5dd969589d1ff7a5f9ac2d7bdc0c8a422421b29612b36d",
+      "packaged_sha256": "af83562c2f620cb3ab5dd969589d1ff7a5f9ac2d7bdc0c8a422421b29612b36d"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/shot-recipes.md",
+      "source_sha256": "42bb61dcc8527b6d35268d3f27562bd55598f580146f580df90847014539aa9e",
+      "packaged_sha256": "42bb61dcc8527b6d35268d3f27562bd55598f580146f580df90847014539aa9e"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/skool.md",
+      "source_sha256": "ed0517b3d5076244d2993d17386db5b8c4a2a5c6137dc959dff03e681bd443b8",
+      "packaged_sha256": "ed0517b3d5076244d2993d17386db5b8c4a2a5c6137dc959dff03e681bd443b8"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/templates.md",
+      "source_sha256": "f86faa67d3bb8a73f8344ab18662ab5ed117b70762c76e4aac29890375dcf598",
+      "packaged_sha256": "f86faa67d3bb8a73f8344ab18662ab5ed117b70762c76e4aac29890375dcf598"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/visual-evidence.md",
+      "source_sha256": "100b27de76ce6b14613cad643e42ae25d378502cf7b820038d308361628d1bfa",
+      "packaged_sha256": "04fe3bd8b5f6da340c2f6492c923c912d0b5ff6e82ea45d0e1632c72690502dd"
+    },
+    {
+      "path": "plugins/samin-reel-engine/references/voice-guide.md",
+      "source_sha256": "9a5dfbe4c1ea7a70cd7365cce6767d9622cf5c49ed2c9ce662faf73e2262f978",
+      "packaged_sha256": "9a5dfbe4c1ea7a70cd7365cce6767d9622cf5c49ed2c9ce662faf73e2262f978"
+    }
+  ]
+}

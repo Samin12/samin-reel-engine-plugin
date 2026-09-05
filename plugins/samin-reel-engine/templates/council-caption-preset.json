@@ -1,0 +1,15 @@
+{
+  "output": {"width": 720, "height": 1280, "fps": 30, "split_fraction": 0.4648},
+  "captions": {
+    "font_size": 52,
+    "font_family": "Arial Black",
+    "accent": "#D4A1F7",
+    "uppercase": true,
+    "hold": 0.06,
+    "max_words": 3,
+    "max_chars": 24,
+    "omit_terminal_punctuation": true,
+    "background": "rgba(0,0,0,0)",
+    "emphasis": []
+  }
+}

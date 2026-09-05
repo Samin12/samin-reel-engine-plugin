@@ -1,0 +1,91 @@
+{
+  "example_scope": "One real Council beat; not a complete editorial map or timing template for a new script.",
+  "source": "Historical worked beat; associated private audit/source files are not bundled. Use this structure with your own assets.",
+  "beat": {
+    "beat_id": "beat-04",
+    "spoken_text": "You can set up what's basically a Claude council",
+    "word_range": [
+      18,
+      27
+    ],
+    "output_interval": {
+      "start": 4.62,
+      "end": 6.72
+    },
+    "viewer_question": "What real toolkit could implement separate agents?",
+    "primary_job": "proof",
+    "visual": {
+      "asset_ids": [
+        "official-python-sdk-github"
+      ],
+      "shot_ids": [
+        "shot-04",
+        "shot-05"
+      ],
+      "representation": "verified_source_media",
+      "truth_status": "verified_observed",
+      "visible_content": "Actual anthropics GitHub README, followed by a closer title/install view.",
+      "fit_reason": "What real toolkit could implement separate agents? The official Claude Agent SDK exists as an implementation toolkit.",
+      "expected_takeaway": "The official Claude Agent SDK exists as an implementation toolkit.",
+      "proof_scope": "Availability proof only: this manual prompt pack is not a tested SDK implementation; pip installation does not create the four-role Council.",
+      "evidence_refs": [
+        "asset-index.json#official-python-sdk-github",
+        "words.json",
+        "timeline.json",
+        "https://github.com/anthropics/claude-agent-sdk-python/blob/main/README.md",
+        "proof-sources.json"
+      ],
+      "limitations": [
+        "Availability proof only: this manual prompt pack is not a tested SDK implementation; pip installation does not create the four-role Council."
+      ],
+      "on_screen_label": "GITHUB \u2022 CLAUDE AGENT SDK",
+      "rejected_alternatives": []
+    },
+    "timing": {
+      "anchor_text": "set",
+      "anchor_word_index": 20,
+      "anchor_time": 4.76,
+      "reveal_time": 4.366667,
+      "timing_reason": "Selected shot begins at 4.367s; spoken anchor 'set' begins at 4.760s. The established visual leads the key word so the viewer can identify the object before its action. Overview-to-detail change at 5.1s keeps source identity before the SDK title.",
+      "stable_hold": {
+        "start": 5.1,
+        "end": 6.72
+      },
+      "required_read_text": "Claude Agent SDK for Python",
+      "readability_reason": "Only the stated short label/excerpt is a reading target; surrounding source text is context. The declared hold is planned and requires normal-speed phone-size verification. Hold is limited to this spoken-beat/shot intersection; no normal-speed pass is claimed."
+    },
+    "placement": {
+      "layout": "split_screen",
+      "focal_rect": {
+        "x": 0.04,
+        "y": 0.07,
+        "width": 0.92,
+        "height": 0.34
+      },
+      "caption_rect": {
+        "x": 0.08,
+        "y": 0.435,
+        "width": 0.84,
+        "height": 0.1
+      },
+      "presenter_face_rect": null,
+      "must_remain_visible": [
+        "Samin eyes and mouth",
+        "caption phrase",
+        "Source/illustration label"
+      ],
+      "safe_area_check": "not_checked",
+      "focus_reason": "Planned normalized focal/caption region from timeline split and caption anchors; face bounds and current Instagram overlays are not measured. Active source crops and source-extraction coordinates are in asset-index uses. Inspect the final frame before declaring clear."
+    },
+    "assessment": {
+      "status": "planned",
+      "viewed_render_span": {
+        "start": 4.73,
+        "end": 4.763333
+      },
+      "observed_takeaway": "Sampled frame only: Original GitHub layout and owner/repository context appear, then a tighter Claude Agent SDK for Python title/install view. Source label retained.",
+      "hard_failures": [],
+      "revision": null
+    }
+  }
+}

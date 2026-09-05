@@ -1,0 +1,84 @@
+{
+  "render_sha256": "<actual reviewed render hash>",
+  "music": {
+    "status": "pending",
+    "asset_id": null,
+    "user_opt_out": null,
+    "source_in": null,
+    "beat_markers_seconds": [],
+    "cue_checks": [],
+    "energy_plan": [],
+    "audibility_checks": [],
+    "ending_check": "pending"
+  },
+  "speech": {
+    "edl_path": null,
+    "aroll_sha256": null,
+    "words_path": null,
+    "playback_speed": 1,
+    "pause_cut_checks": [],
+    "retimed_artifacts": [],
+    "complete_speech_check": "pending",
+    "first_word_check": "pending",
+    "cta_and_last_word_check": "pending"
+  },
+  "sfx": {
+    "accent_checks": [],
+    "speech_masking_check": "pending"
+  },
+  "opening": {
+    "window_seconds": 5,
+    "observed_actions": [],
+    "body_comparison": "pending",
+    "motion_cadence": {
+      "preferred_max_unchanged_seconds": 0.5,
+      "max_unchanged_seconds": 1,
+      "user_override": null,
+      "first_visible_action_seconds": null,
+      "first_visible_action": null,
+      "shot_spans": [],
+      "unchanged_visual_spans": [],
+      "max_observed_unchanged_seconds": null,
+      "split_intro": {
+        "used": null,
+        "duration_seconds": null,
+        "reason": null
+      },
+      "normal_speed_checks": [],
+      "status": "pending"
+    },
+    "cold_view": {
+      "status": "pending",
+      "first_frame_path": null,
+      "first_two_seconds_path": null,
+      "display_width_px": null,
+      "muted": true,
+      "brief_hidden": true,
+      "reviewer": null,
+      "subject_response": null,
+      "payoff_response": null,
+      "focal_detail_response": null,
+      "first_frame_subject_visible": null,
+      "simultaneous_subject_payoff_relationship": null,
+      "limitations": []
+    }
+  },
+  "motion": {
+    "recorded_motion_seconds": null,
+    "authored_motion_seconds": null,
+    "camera_move_on_still_seconds": null,
+    "intentional_still_seconds": null,
+    "distinct_source_types_or_views": [],
+    "full_screen_motion_spans": [],
+    "static_endpoint_checks": [],
+    "repetition_findings": []
+  },
+  "playback_review": {
+    "full_with_sound": false,
+    "phone_size": false,
+    "reviewer": null,
+    "method": null,
+    "limitations": []
+  },
+  "gate_results": []
+}

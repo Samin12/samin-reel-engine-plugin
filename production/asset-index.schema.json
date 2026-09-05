@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reel production asset index",
+  "type": "object",
+  "required": ["reel_id", "assets"],
+  "properties": {
+    "reel_id": {"type": "string"},
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "source", "usage", "verification", "depiction"],
+        "properties": {
+          "id": {"type": "string"},
+          "kind": {"enum": ["a_roll", "b_roll", "graphic", "screenshot", "audio", "caption", "giveaway", "reference", "render"]},
+          "path": {"type": ["string", "null"]},
+          "source": {"type": "object", "properties": {"url": {"type": ["string", "null"]}, "owner": {"type": "string"}, "saved_item_id": {"type": ["string", "null"]}}},
+          "usage": {"type": "string"},
+          "verification": {"enum": ["requested", "downloaded", "inspected", "source_checked", "rendered", "tested"]},
+          "depiction": {"enum": ["actual_recording", "actual_product_result", "conceptual_illustration", "reference_only", "written_resource"]},
+          "sha256": {"type": ["string", "null"]},
+          "shot_ids": {"type": "array", "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        }
+      }
+    }
+  }
+}

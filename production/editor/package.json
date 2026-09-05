@@ -1,0 +1,10 @@
+{
+  "name": "samin-reel-editor",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Local original-footage reel editor using HyperFrames",
+  "dependencies": {
+    "hyperframes": "0.8.27",
+    "gsap": "3.13.0"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "example_scope": "First-frame hierarchy plus an active opening; use the principle, not the claim or a fixed layout.",
+  "frame": "mobbin-hook-frame.png",
+  "frame_sha256": "5f99266c58cef80fa7abd61216715b100ef0f8acec61500b0d87238c4dc513cf",
+  "failed_approach": "Website menus hid the benefit; a clearer but long continuous graphic then held one composition too long.",
+  "decision": "Show the complete count/unit/Claude message over Samin for0.5s, then change useful real-source views every0.73\u20130.83s while the context remains readable.",
+  "required_reading_targets": [
+    "600,000+",
+    "REAL APP SCREENS",
+    "FOR CLAUDE CODE"
+  ],
+  "supporting_visuals": [
+    "actual Headspace video",
+    "actual Duolingo screen",
+    "actual Wise screen"
+  ],
+  "motion_rule": "Do not hold an unchanged intro image beyond1s; prefer0.5s. Tiny zooms, hidden movement and caption-only changes do not qualify as opening action.",
+  "evidence_boundary": "The library size is the source\u2019s advertised count. This montage illustrates access to references, not a captured Claude execution. Reverify every claim for a fresh script.",
+  "review_result": "A fresh model identified the count, unit and Claude Code audience from the phone-size still. Encoded state samples were separately inspected; no measured retention claim.",
+  "limits": [
+    "This does not measure retention, virality or human timed-glance comprehension.",
+    "Tiny app/source text is contextual; it is not the essential message."
+  ],
+  "opening_views": [
+    {
+      "start": 0,
+      "end": 0.5,
+      "view": "Compact proof above original speaking presenter",
+      "action": "Cards settle over first .22s; presenter moves naturally at 1\u00d7."
+    },
+    {
+      "start": 0.5,
+      "end": 1.233333,
+      "view": "Full-screen three-app fan",
+      "action": "Cut to larger native Headspace video with two contextual screens."
+    },
+    {
+      "start": 1.233333,
+      "end": 2,
+      "view": "Headspace close view",
+      "action": "Side cards depart; central app grows while its native animation continues."
+    },
+    {
+      "start": 2,
+      "end": 2.733333,
+      "view": "Real Mobbin gallery",
+      "action": "Source changes to the wider library recording."
+    },
+    {
+      "start": 2.733333,
+      "end": 3.5,
+      "view": "Wise app detail",
+      "action": "New real screen; a restrained reframe supports this 0.767s view."
+    },
+    {
+      "start": 3.5,
+      "end": 4.333333,
+      "view": "Headspace later native state",
+      "action": "New moving onboarding state before the existing Mobbin connector."
+    }
+  ],
+  "frame_basis": "First frame extracted from final Mobbin v4 MP4 at360\u00d7640. Cold test used equivalent standalone-hook frame before final captions; final frame inspected separately.",
+  "source": "../../../docs/showcase.md"
+}

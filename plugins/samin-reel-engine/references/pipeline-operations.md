@@ -8,6 +8,8 @@ Turn a real, demonstrable story into a reel Samin can film, then edit his suppli
 
 **Research → Ideation → Scripting → Giveaway assets.** Research starts with Samin's Eden saves and adds fresh primary sources. Stage four includes a Skool resource post and the ManyChat delivery handoff. Every stage saves a reusable artifact for the next stage. A user may run the whole pipeline or resume at any stage whose inputs exist.
 
+New research/script batches default to [curated resource reels](curated-resource-reels.md), based on Samin's five design resources reference: one viewer outcome, several complementary plugins/skills/tools, an outcome-first hook and one complete-resource CTA. Apply that guide through research, ideation and scripting; use other formats when explicitly requested or when an evidence-based editorial choice is recorded.
+
 | Stage | Input | Saved output | Ready when |
 |---|---|---|---|
 | Research | Eden saves, window, audience, prior story ledger | `research/saved-resources.json`, `research/story-bank.json`, evidence, visual index and shot queue | Saved contents were read; chosen claims and dates have primary-source support; useful source visuals were inspected or capture gaps recorded |
@@ -29,16 +31,20 @@ Read [voice-guide.md](voice-guide.md), then three samples that fit the requested
 
 Default to the last 30 inclusive calendar days ending today and five scripts unless the request suggests otherwise. State the date window once. Use a `runs/YYYY-MM-DD/` folder in the writing project; preserve previous drafts when rerunning.
 
+The window governs news claims, not eligibility of useful evergreen resources. For a default five-script batch, choose five distinct outcomes and research a complementary stack for each. Save the supplied reference's transcript/breakdown provenance before copying its structure. Prioritize actual Eden MCP reads when available; state clearly when reference analysis comes from another source.
+
 First read [saved-resources.md](saved-resources.md). Search Samin's Eden library for the topic and relevant bookmarks, and open the most useful saved items. Preserve item IDs, original source URLs, what you actually read, and the reuse decision in `research/saved-resources.json`. The 30-day limit applies to news, not useful evergreen bookmarks. A saved date is not a launch date. If Eden is unavailable, say so and record the limitation; continue the independent research below without claiming saved-resource access.
 
 1. Run the bundled collector for GitHub discovery or named repositories:
 
    ```bash
    python3 <skill>/scripts/research.py --days 30 --as-of YYYY-MM-DD --out <run>/research/collect
+   python3 <skill>/scripts/research.py --query '"claude code" design skill' --out <run>/research/design-resources
+   python3 <skill>/scripts/research.py --mode news --days 30 --as-of YYYY-MM-DD --out <run>/research/recent-activity
    python3 <skill>/scripts/research.py --repo OWNER/REPO --days 30 --as-of YYYY-MM-DD --out <run>/research/collect
    ```
 
-   Inspect its manifest, errors, candidates, and visual index. These are discovery leads, not verified claims. If a source fails, report the gap and continue with available sources. Do not execute candidate repository code.
+   The default resource mode searches skills, plugins, MCPs and reusable workflow resources without a push-date cutoff. News mode keeps the dated activity search. Search buckets are interleaved before enrichment so the first query cannot consume the whole shortlist. Inspect the manifest, errors, candidates, and visual index. These are discovery leads, not verified claims or a final curated stack. If a source fails, report the gap and continue with available sources. Do not execute candidate repository code.
 
 2. Search official release posts, product changelogs, model cards, and original demos for the same window. Use available web search or Firecrawl. Social posts and Hacker News can reveal an angle; follow them to the underlying primary source. A changing feed, repository push, star count, or roundup date does not establish a launch date.
 
@@ -58,6 +64,7 @@ Match each giveaway to relevant Eden saves before inventing a new resource. Reco
 
 ## Stage 3 — Scripting
 
+- Use the default reference's outcome-first count hook, ordered named resource beats, distinct practical uses and complete-list CTA. Follow [curated-resource-reels.md](curated-resource-reels.md) for selection, cadence, proof and the hook/body/visual/giveaway count check. An explicitly requested alternative format takes precedence.
 - Most standard samples run 98–195 whitespace-counted words. Use roughly 140–175 as a starting target; choose the nearest matching sample over a rigid quota. The short promotional sample is a separate format.
 - Write one spoken beat per paragraph. Keep stage directions, source citations, timings, and factual caveats for the editor outside the script, except qualifications needed for the spoken claim to remain true.
 - Prefer concrete viewer actions: give it this input, connect this tool, compare this output. Name the thing early. Explain the mechanism before the payoff.

@@ -2,6 +2,8 @@
 
 Use this compact record for each selected or rejected story. Fields can be null when genuinely unknown; unknown evidence cannot support a stronger claim.
 
+For the default resource-stack format, one story is the shared viewer outcome and the complete ordered collection. Add the per-resource fields and reference breakdown described in [curated-resource-reels.md](curated-resource-reels.md); preserve the fields below for pipeline compatibility. Give each item's factual claim its own primary source instead of citing the reference reel as evidence for the whole stack.
+
 ```json
 {
   "id": "short-stable-id",

@@ -47,9 +47,9 @@ Explore the pipeline, watch the actual reel, choose your starting point and sign
 
 | Stage | What you get |
 |---|---|
-| **Research** | Saved-resource leads plus fresh primary sources; dates, claim checks, source links and visual opportunities. |
+| **Research** | Outcome-led stacks of plugins, skills, MCPs and resources; Eden reference breakdowns, primary-source claims and visual opportunities. |
 | **Ideation** | A specific hook, audience payoff, visual angle and a giveaway worth asking for. |
-| **Scripting** | Spoken copy calibrated to your own examples, filming-length checks and a visual job for each beat. |
+| **Scripting** | An outcome-first hook, distinct named-resource beats and a matching complete-list CTA, calibrated to your examples. |
 | **Intake** | Word-timed transcription, take candidates, reviewed cuts and an editable source-to-output map. |
 | **Assets** | Relevant posts, GitHub READMEs, docs, screenshots, screen recordings and real resource previews with provenance. |
 | **Generation** | A bounded brief for missing explanatory images or motion, using an available provider; generated material stays distinguishable from evidence. |
@@ -98,7 +98,9 @@ For local speech transcription, also install `production/requirements-intake.txt
 
 **Start from an idea**
 
-> Use Samin Reel Engine. Research this topic using my saved resources and primary sources from the last 30 days. Propose three angles, then prepare a script, proof-asset queue and a real giveaway for the strongest angle.
+> Use Samin Reel Engine. Find a complementary stack of skills, plugins and resources that helps my audience with this outcome. Use my Eden saves and primary sources, including useful evergreen tools. Follow my five design resources reel for the hook and writing style, then prepare the script, proof-asset queue and complete giveaway.
+
+New research/script batches default to the [curated resource format](skill/references/curated-resource-reels.md), based on [Samin's reference reel](https://www.instagram.com/p/Dc7hhAUEvu1/). Each reel covers one outcome through several distinct resources. Explicit requests for news, a single-tool explainer or another format still take precedence. The collector includes evergreen resources by default; use `--mode news` for recent repository activity. Eden MCP is preferred when available and authenticated; the plugin does not bundle an Eden connection or claim access when it is missing.
 
 **Turn a filmed batch into a reel**
 

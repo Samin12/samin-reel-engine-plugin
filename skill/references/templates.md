@@ -2,6 +2,8 @@
 
 These are beat scaffolds, not fill-every-slot formulas. Each numbered item is one spoken paragraph. The shortform target is normally 140–175 words and around 9 beats; observed standard reels span 98–195 words and 7–12 beats. Combine or remove beats when a story needs less. Source labels V1–V30 refer to the September Reels corpus.
 
+For new Samin batches, start with **Small curated stack** and the [reference-led research and writing guide](curated-resource-reels.md). Its default is an outcome-first hook, several complementary resources, concrete uses and the complete-list CTA. Other archetypes remain available for an explicit request or a documented editorial reason; do not silently revert to generic single-tool news.
+
 ## New tool or capability
 
 Anchors: V1, V3, V4, V10, V15, V21, V24, V26.
@@ -37,6 +39,8 @@ The V2 variant introduces role one → opposing role → investor → judge. The
 ## Small curated stack
 
 Anchors: V6, V7, V8, V18, V25.
+
+Primary structural reference: [the five design resources reel](https://www.instagram.com/p/Dc7hhAUEvu1/) and matching local sample V7. Lead with the transformation when stronger than opening with the list itself. About five items is a useful starting shape, not permission to pad a weak stack. A mixed set of skills, CLIs and MCPs should be called resources or tools, with each item named accurately.
 
 1. These [real count] [tools/plugins/prompts] help you [one shared outcome].
 2. [Optional reason to care].
@@ -120,7 +124,11 @@ Anchor: V19 only. Keep reference clip and spoken lines separate. The clean spoke
 
 ```yaml
 id: story-001
-archetype: new-tool
+archetype: curated-resource-stack
+reference_id: design-stack-Dc7hhAUEvu1
+shared_outcome: ""
+hook_count: null
+resource_ids: []
 angle: A concrete outcome for a named viewer
 source_urls: []
 event_date: null

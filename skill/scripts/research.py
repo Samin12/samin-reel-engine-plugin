@@ -18,7 +18,9 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
-DEFAULT_QUERIES = ["claude code", "ai agent", "mcp"]
+DEFAULT_QUERIES = ['"claude code" plugin', '"agent skills"', '"mcp server"',
+                   '"DESIGN.md"', '"claude code" workflow', '"claude code" template']
+NEWS_QUERIES = ["claude code", "ai agent", "mcp"]
 TRACKING = {"fbclid", "gclid", "dclid", "mc_cid", "mc_eid"}
 
 
@@ -212,22 +214,35 @@ def run(args, fetcher=None):
     window = calendar_window(args.days, args.as_of)
     fetcher = fetcher or Fetcher(out, args.max_requests, args.retries)
     manifest = {"schema_version": 1, "started_at_utc": utc_now(), "window": window,
-                "method": "GitHub activity discovery and release-metadata enrichment; agent verification required",
+                "method": "GitHub resource/activity discovery and release-metadata enrichment; agent verification required",
+                "discovery_mode": args.mode,
                 "request_cap": args.max_requests, "retries_per_request": args.retries, "queries": [],
                 "release_scan_limit_per_repo": 10, "media_downloaded": False}
     selected = {}
     for value in args.repo:
         selected.setdefault(canonical_repo(value), []).append({"basis": "explicit_repository"})
     if not args.repo:
-        for query in args.query or DEFAULT_QUERIES:
-            expression = f"{query} pushed:{window['lower_date']}..{window['upper_date']} archived:false"
+        pools = []
+        for query in args.query or (NEWS_QUERIES if args.mode == "news" else DEFAULT_QUERIES):
+            activity = f" pushed:{window['lower_date']}..{window['upper_date']}" if args.mode == "news" else ""
+            expression = f"{query}{activity} archived:false"
             manifest["queries"].append(expression)
             endpoint = "search/repositories?" + urllib.parse.urlencode({"q": expression, "sort": "stars", "order": "desc", "per_page": args.limit})
             response = fetcher.get(endpoint)
             if response is not None:
+                pool = []
                 for item in response.get("items", []):
                     key = canonical_repo(item["full_name"])
-                    selected.setdefault(key, []).append({"basis": "repository_pushed_search_not_launch", "query": expression})
+                    pool.append((key, {"basis": "repository_pushed_search_not_launch" if args.mode == "news"
+                                      else "resource_search_not_launch", "query": expression}))
+                pools.append(pool)
+        # Take one candidate per query in turn so one broad query cannot crowd out
+        # skills, plugins and the other resource categories. Preserve all provenance.
+        for rank in range(max((len(pool) for pool in pools), default=0)):
+            for pool in pools:
+                if rank < len(pool):
+                    key, evidence = pool[rank]
+                    selected.setdefault(key, []).append(evidence)
     candidates, visuals = [], []
     for repo, discovery in list(selected.items())[:args.limit]:
         candidate, found = enrich(repo, fetcher, window, discovery)
@@ -253,6 +268,8 @@ def main(argv=None):
     parser.add_argument("--days", type=int, default=30, help="inclusive UTC calendar days, 1..366")
     parser.add_argument("--as-of", default=datetime.now(timezone.utc).date().isoformat())
     parser.add_argument("--out", required=True)
+    parser.add_argument("--mode", choices=["resources", "news"], default="resources",
+                        help="resources includes evergreen skills/plugins; news filters by recent repository pushes")
     parser.add_argument("--query", action="append", default=[], help="up to six GitHub discovery queries")
     parser.add_argument("--repo", action="append", default=[], help="OWNER/NAME; bypass search, repeatable")
     parser.add_argument("--limit", type=int, default=10, help="maximum repos enriched, 1..20")

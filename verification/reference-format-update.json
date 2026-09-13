@@ -1,0 +1,22 @@
+{
+  "reference_url": "https://www.instagram.com/p/Dc7hhAUEvu1/",
+  "verified_at": "2026-09-13T21:38:20.214189+00:00",
+  "evidence": [
+    "Full transcript retrieved with Eden MCP eden_read_social_post",
+    "Matching local V7 plus related V6 and V8 read",
+    "Source video contact sheet inspected"
+  ],
+  "checks": {
+    "skill_frontmatter": "passed for research, ideation and scripting",
+    "plugin_manifest": "passed",
+    "discovery_behavior": "3 offline tests passed: evergreen eligibility and shortlist coverage, recent activity window, explicit repository bypass",
+    "live_github_collection": "1 repository enriched, 32 visual references, 4 requests, zero errors",
+    "packaged_reference_hashes": "passed"
+  },
+  "scope": "Research, ideation handoff and scripting defaults; preserves explicit alternative formats",
+  "limitations": [
+    "No new reel produced or published",
+    "Reference product/access claims are historical style evidence, not current endorsements",
+    "Eden returned transcript but no prewritten breakdown; analysis is authored from transcript"
+  ]
+}

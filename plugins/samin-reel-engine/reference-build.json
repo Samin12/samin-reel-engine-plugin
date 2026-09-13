@@ -9,6 +9,11 @@
       "packaged_sha256": "5dda61f809896977d0dec5cf99ba9b76a360050a0e4ecac45751f7b9e83f107d"
     },
     {
+      "path": "plugins/samin-reel-engine/references/curated-resource-reels.md",
+      "source_sha256": "0c6adc1adf7a63f78a720d8549683c7ef31786ac640bae2aaf702af243e7a9ac",
+      "packaged_sha256": "0c6adc1adf7a63f78a720d8549683c7ef31786ac640bae2aaf702af243e7a9ac"
+    },
+    {
       "path": "plugins/samin-reel-engine/references/generation-recipes.md",
       "source_sha256": "106c67346c6c17f175105091d8bc57d5dd05e68b7b757d6d910349f91f0d3ca4",
       "packaged_sha256": "106c67346c6c17f175105091d8bc57d5dd05e68b7b757d6d910349f91f0d3ca4"
@@ -30,8 +35,8 @@
     },
     {
       "path": "plugins/samin-reel-engine/references/pipeline-operations.md",
-      "source_sha256": "722d4023b7285004a2febfc6bfd992cf8bf7e92bcf7dd8b218926e818aaa2ad5",
-      "packaged_sha256": "722d4023b7285004a2febfc6bfd992cf8bf7e92bcf7dd8b218926e818aaa2ad5"
+      "source_sha256": "34de9ea6c77fac14fa76318f4d40a585a71f2d5586a1b5a7db2f24de967f0dda",
+      "packaged_sha256": "34de9ea6c77fac14fa76318f4d40a585a71f2d5586a1b5a7db2f24de967f0dda"
     },
     {
       "path": "plugins/samin-reel-engine/references/quality-procedure.md",
@@ -40,13 +45,13 @@
     },
     {
       "path": "plugins/samin-reel-engine/references/research-contract.md",
-      "source_sha256": "58034b831634aec36e474185ca36861d9f5183f8d02bcdf7ec209afbf7b95736",
-      "packaged_sha256": "58034b831634aec36e474185ca36861d9f5183f8d02bcdf7ec209afbf7b95736"
+      "source_sha256": "e4801f43ba3c824210e1b06457acd63685141e80a25ce283ffb05c2239fd17e7",
+      "packaged_sha256": "e4801f43ba3c824210e1b06457acd63685141e80a25ce283ffb05c2239fd17e7"
     },
     {
       "path": "plugins/samin-reel-engine/references/saved-resources.md",
-      "source_sha256": "af83562c2f620cb3ab5dd969589d1ff7a5f9ac2d7bdc0c8a422421b29612b36d",
-      "packaged_sha256": "af83562c2f620cb3ab5dd969589d1ff7a5f9ac2d7bdc0c8a422421b29612b36d"
+      "source_sha256": "ad2ca35e03f6f844fa71b172ad9c30426b674761fbf83cc6f14b37a102a431a4",
+      "packaged_sha256": "ad2ca35e03f6f844fa71b172ad9c30426b674761fbf83cc6f14b37a102a431a4"
     },
     {
       "path": "plugins/samin-reel-engine/references/shot-recipes.md",
@@ -60,8 +65,8 @@
     },
     {
       "path": "plugins/samin-reel-engine/references/templates.md",
-      "source_sha256": "f86faa67d3bb8a73f8344ab18662ab5ed117b70762c76e4aac29890375dcf598",
-      "packaged_sha256": "f86faa67d3bb8a73f8344ab18662ab5ed117b70762c76e4aac29890375dcf598"
+      "source_sha256": "3a3109781f9425a43e23aadc75a0e01100355604b6cc3a961035e1212ea31949",
+      "packaged_sha256": "3a3109781f9425a43e23aadc75a0e01100355604b6cc3a961035e1212ea31949"
     },
     {
       "path": "plugins/samin-reel-engine/references/visual-evidence.md",
@@ -70,8 +75,8 @@
     },
     {
       "path": "plugins/samin-reel-engine/references/voice-guide.md",
-      "source_sha256": "9a5dfbe4c1ea7a70cd7365cce6767d9622cf5c49ed2c9ce662faf73e2262f978",
-      "packaged_sha256": "9a5dfbe4c1ea7a70cd7365cce6767d9622cf5c49ed2c9ce662faf73e2262f978"
+      "source_sha256": "4974a3ed1825c34bb2520df3344064473453160de07e651d7d8b723c1cca332c",
+      "packaged_sha256": "4974a3ed1825c34bb2520df3344064473453160de07e651d7d8b723c1cca332c"
     }
   ]
 }

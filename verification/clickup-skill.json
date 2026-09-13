@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-09-13T22:28:21.242766+00:00",
+  "skill_validation": "passed",
+  "plugin_validation": "passed",
+  "relative_links": "all new documentation links resolve",
+  "standalone_copy": "skill and its references resolve after isolated folder copy",
+  "skill_count": 11,
+  "credential_pattern_check": "passed on changed/new files",
+  "behavioral_review": {
+    "five_script_two_resource_batch": "count, status split and complete giveaways specified",
+    "one_link": "defaults to one reel when count absent",
+    "human_avatar": "only on request; identical script and variant-specific media",
+    "uncertain_save": "inspect before retry to avoid duplicates",
+    "missing_browser": "local preparation plus explicit blocker, no silent API substitution"
+  },
+  "limits": [
+    "Instruction-level review and structural checks only; no fresh end-to-end computer-use run was performed.",
+    "No ClickUp tasks, account settings, local plugin installation or public sharing changed for this skill publication."
+  ]
+}

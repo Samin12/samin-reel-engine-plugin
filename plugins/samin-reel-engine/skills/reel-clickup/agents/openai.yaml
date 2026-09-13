@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reel ClickUp"
+  short_description: "Build complete reel cards and resource docs in ClickUp"
+  default_prompt: "Use $reel-clickup to turn my reference link into scripted ClickUp cards with matching resources and accurate stages using computer use."

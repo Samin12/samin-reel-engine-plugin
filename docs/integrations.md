@@ -2,7 +2,7 @@
 
 | Service or tool | Role | Included or required |
 |---|---|---|
-| Codex | Runs the ten skills and stage tools | Plugin package included; Codex installation required |
+| Codex | Runs the eleven skills and stage tools | Plugin package included; Codex installation required |
 | HyperFrames | Local HTML/video composition and rendering | Pinned npm dependency |
 | FFmpeg / FFprobe | Media preparation, encode and audio checks | Install locally |
 | Whisper | Word-timed local transcription | Optional intake dependencies and model file |

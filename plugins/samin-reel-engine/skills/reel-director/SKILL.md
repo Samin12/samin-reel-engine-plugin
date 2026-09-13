@@ -22,6 +22,7 @@ Route by the next unfinished outcome:
 | Cuts, placement, captions, sound and rendering | `reel-edit` |
 | Actual-render judgment and repairs | `reel-review` |
 | Giveaway, Skool, ManyChat and release handoff | `reel-deliver` |
+| Populate ClickUp with scripts, resources and accurate board stages | `reel-clickup` |
 
 Use the current task's tools and available subagents when useful; do not require a particular model tier. Give any worker a bounded beat/stage, input files, owned output paths and pass criteria. Do not hand a smaller model the entire repository or ask it to invent the workflow. Preserve other agents' edits.
 

@@ -15,7 +15,9 @@
 
 Samin Reel Engine turns a promising story into a complete creator workflow: research the claim, develop an angle, write a filmable script, gather proof, edit the recorded take, review the actual output, and prepare the resource promised in the CTA.
 
-It combines **ten focused skills** with a **local HyperFrames editing runtime**, practical source-finding recipes, reusable JSON contracts and explicit creative checks. Skills load by stage, so an agent can repair one weak visual or work through the complete pipeline.
+It combines **eleven focused skills** with a **local HyperFrames editing runtime**, practical source-finding recipes, reusable JSON contracts and explicit creative checks. Skills load by stage, so an agent can repair one weak visual or work through the complete pipeline.
+
+**New link → ClickUp workflow:** [Copy a ready-to-use Codex prompt](docs/clickup-copy-paste.md) to create scripts, research notes, resource Docs and correctly staged cards using computer use. This workflow does not require the video-rendering dependencies.
 
 ## Explore the interactive website
 
@@ -114,7 +116,7 @@ New research/script batches default to the [curated resource format](skill/refer
 
 > Prepare the actual resource, a matching Skool post and a ManyChat keyword packet. Validate the links and record what still needs configuration before publishing.
 
-## Ten skills, loaded as needed
+## Eleven skills, loaded as needed
 
 | Skill | Focus |
 |---|---|
@@ -128,6 +130,7 @@ New research/script batches default to the [curated resource format](skill/refer
 | [`reel-edit`](plugins/samin-reel-engine/skills/reel-edit/SKILL.md) | Composition, captions, motion, music and SFX |
 | [`reel-review`](plugins/samin-reel-engine/skills/reel-review/SKILL.md) | Actual-output judgment and repair |
 | [`reel-deliver`](plugins/samin-reel-engine/skills/reel-deliver/SKILL.md) | Resource packs, Skool and ManyChat handoffs |
+| [`reel-clickup`](plugins/samin-reel-engine/skills/reel-clickup/SKILL.md) | Complete ClickUp cards, resource Docs and verified board stages |
 
 ## Local tools underneath the skills
 
@@ -161,7 +164,7 @@ Useful starting points:
 ## Repository map
 
 ```text
-plugins/samin-reel-engine/   10 skills, shared playbooks, templates and runner
+plugins/samin-reel-engine/   11 skills, shared playbooks, templates and runner
 production/                 Local intake, capture, edit and review runtime
 skill/                      Maintained playbooks and research/pipeline helpers
 tools/hold-your-voice/       Voice-profile and draft-check helper
